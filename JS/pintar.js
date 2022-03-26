@@ -1,9 +1,7 @@
-export function reproducirCanciones(resultado){
+export function pintarCanciones(resultado){
 
     resultado.tracks.forEach(function (cancion){ 
         
-      
-       
         let columna=document.createElement("div")
             
             columna.classList.add("col")
@@ -46,8 +44,5 @@ export function reproducirCanciones(resultado){
             fila.appendChild(columna)
     
     }) 
-
-
-
 
 }

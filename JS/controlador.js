@@ -1,23 +1,20 @@
-import {TOKEN} from "./generadorToken.js"
-import{generarURI}from"./generadorUri.js"
-import {consumirApi} from "./consumirApi.js"
-import {reproducirCanciones}from "./reproductor.js"
+import{TOKEN} from "./generadorToken.js"
+import{generarUri} from "./generadorUri.js"
+import{consumirAPI} from "./servicios.js"
+import{pintarCanciones} from "./pintar.js"
 
 let boton=document.getElementById("boton")
 boton.addEventListener("click",function(evento){
     evento.preventDefault()
-    let ArtistaSeleccionado=document.getElementById("artista").value
-let URI=generarURI(ArtistaSeleccionado)
 
-    async function activarApi(){
-        let datosConsultadosApi= await consumirApi(URI,TOKEN)
-        console.log(datosConsultadosApi)
-        
-        //llamar a pintar canciones
-        reproducirCanciones(datosConsultadosApi)
- 
+    let ArtistaSeleccionado=document.getElementById("artista").value
+    let URI=generarUri(ArtistaSeleccionado)
+
+     async function activarApi(){
+        let cancionesApi=await consumirAPI(URI,TOKEN)
+        console.log(cancionesApi)
+        pintarCanciones(cancionesApi)
     }
     activarApi()
-     
-     
-})  
+    
+})
