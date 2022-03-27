@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 body {
-	background-image:url("images/gif1.gif");
+	background-image:url("images/gif3.gif");
 	color: #ddd;
 	margin: 0;
 	padding: 0;
@@ -8,4 +10,22 @@ body {
 	font-size: 8pt;
 	font-weight: 300;
 	overflow: hidden
+}nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
 }
