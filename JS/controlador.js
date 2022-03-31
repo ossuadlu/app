@@ -1,4 +1,4 @@
-import{TOKEN} from "./generadorToken.js"
+import{generarToken} from "./generadorToken.js"
 import{generarUri} from "./generadorUri.js"
 import{consumirAPI} from "./servicios.js"
 import{pintarCanciones} from "./pintar.js"
@@ -11,8 +11,10 @@ boton.addEventListener("click",function(evento){
     let URI=generarUri(ArtistaSeleccionado)
 
      async function activarApi(){
-        let cancionesApi=await consumirAPI(URI,TOKEN)
-        console.log(cancionesApi)
+
+        let token=await generarToken()
+       
+        let cancionesApi=await consumirAPI(URI,token)
         pintarCanciones(cancionesApi)
     }
     activarApi()

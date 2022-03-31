@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 body {
-	background-image:url("images/gif3.gif");
+	background-image:url("images/gif2.gif");
 	color: #ddd;
 	margin: 0;
 	padding: 0;
@@ -19,7 +19,7 @@ nav ul{
     align-items: center;
     list-style-type: none;
     height: 65px;
-    color: white;
+    color: aqua;
 }
 
 nav ul li{

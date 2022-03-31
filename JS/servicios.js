@@ -1,8 +1,8 @@
-export async function consumirAPI(URI,TOKEN){
+export async function consumirAPI(URI,token){
 
     let parametros={
         method:"GET",
-        headers:{Authorization:TOKEN}
+        headers:{Authorization:token}
     }
 
     let respuesta=await fetch(URI,parametros)

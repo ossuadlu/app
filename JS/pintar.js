@@ -1,8 +1,12 @@
 export function pintarCanciones(resultado){
 
+    let fila=document.getElementById("fila")
+    fila.innerHTML=""
+
+
     resultado.tracks.forEach(function (cancion){ 
         
-        let columna=document.createElement("div")
+            let columna=document.createElement("div")
             
             columna.classList.add("col")
         
