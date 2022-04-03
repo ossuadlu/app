@@ -3,8 +3,8 @@ import{generarUri} from "./generadorUri.js"
 import{consumirAPI} from "./servicios.js"
 import{pintarCanciones} from "./pintar.js"
 
-let boton=document.getElementById("boton")
-boton.addEventListener("click",function(evento){
+let botonPlay=document.getElementById("botonPlay")
+botonPlay.addEventListener("click",function(evento){
     evento.preventDefault()
 
     let ArtistaSeleccionado=document.getElementById("artista").value

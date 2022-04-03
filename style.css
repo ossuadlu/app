@@ -1,31 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
-	background-image:url("images/gif2.gif");
-	color: #ddd;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 8pt;
-	font-weight: 300;
-	overflow: hidden
-}nav{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-image: url("JS/images/gif1.gif");
+}
+/*===================MENU==========================*/
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600; 
+ }
+ #menu a{
+     color:#f7f0f0;
+ }
+
+ nav{
+    background-image: url("JS/images/gif1.gif");
+ }
+ 
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carousel-inner {
+    max-height:39rem !important;
+    background-image: url("JS/images/gif1.gif");
+}
+h1{
+    color: #f3f3f3;
 }
 
-nav ul{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    height: 65px;
-    color: aqua;
-}
 
-nav ul li{
-    padding: 0 12px;
+/*=========================FOOTER================================*/
+
+footer {
+    background-image: url("JS/images/gif1.gif");
+    min-height: 100px;;
 }
-.brand img{
-    width: 44px;
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
     padding: 0 8px;
+    color:#f3f3f3;
 }

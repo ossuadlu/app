@@ -1,48 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demospoty - Your favourite music is here</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<title>AdnyLu</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="brand"><img src="images/logo.png" alt="Demospoty"> Demospoty</li>
-            <li>Home</li>
-            <li>About</li>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"id="artista">
-                        <option selected>Your favourite music is here </option>
+<!--========================================================== -->
+                    <!-- ENCABEZADO -->
+<!--========================================================== -->
+<header class="container-fluid bg-dark d-flex justify-content-center">
+    <img src="./JS/images/logo1.png" alt="30" width="35">
+    <p class="text-light mb-0 p-2 fs-6">Contactanos 312-5402046</p>
+    <img src="./JS/images/logo1.png" alt="30" width="35">
+    
+</header>
 
-                        <option value="3SEztK9fNxg81qZ8qETGNT">Yeison Jimenez</option>
-                        <option value="6nnspeopmJAG07xOxHmqTu">Gran Combo</option>
-                        <option value="3nlpTZci9O5W8RsNoNH559">Juan Luis Guerra</option>
-                        <option value="1qto4hHid1P71emI6Fd8xi">Aventura</option>
-                        <option value="49Z1AvGeUaBSanPaOmplK6">Andres Cepeda</option>
-                        <option value="3HyrDGPLI0c9Rd8luuO0zw">Maelo Ruiz</option>
-                        <option value="6nnspeopmJAG07xOxHmqTu">Gran Combo</option>
-                        <option value="3nlpTZci9O5W8RsNoNH559">Juan Luis Guerra</option>
-                        <option value="1qto4hHid1P71emI6Fd8xi">Aventura</option>
-                        <option value="49Z1AvGeUaBSanPaOmplK6">Andres Cepeda</option>
+<nav  class="navbar navbar-expand-lg navbar-light p-3"  id="menu">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="./JS/images/logo1.png" alt="25"width="30" fs-5 text-primary fw-bold>AdnyLu</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                        </select>
-                      <button type="submit" class="btn btn-dark"id="boton">Submit</button>
-                     </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Portafolio</a>
+          </li>
+        </ul>
+        <form >
+          <ul class="d-flex">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"id="artista">
+                <option selected>TU ARTISTA FAVORITO</option>
+                <option value="3OcvS8PzSGYMBvLdzY6g3e">Silvestre Dangond</option>
+                <option value="6nnspeopmJAG07xOxHmqTu">Gran Combo</option>
+                <option value="3nlpTZci9O5W8RsNoNH559">Juan Luis Guerra</option>
+                <option value="1qto4hHid1P71emI6Fd8xi">Aventura</option>
+                <option value="49Z1AvGeUaBSanPaOmplK6">Andres Cepeda</option>
+                <option value="3HyrDGPLI0c9Rd8luuO0zw">Maelo Ruiz</option>
+                <option value="1dI3emu3Tf6ZydmpCEZmqx">Bonny Cepeda</option>
+                <option value="6qL48ZEK7dGD3CtEyjiczE">Proyecto A</option>
+                <option value="33ScadVnbm2X8kkUqOkC6Z">Don Omar</option>
+                <option value="3yHLsTJ9OZ19qwY1Q5BEQJ">Binomio De Oro</option>
+                </select>
+                <button type="submit" class="btn btn-dark"id="botonPlay">Entrar</button>
+                </ul>
                     <div class="container">
                 <div class="row" id ="fila"> 
             </div>
         </div>
-    </nav>
-    <footer>
-
-    </footer>
-
-    <script src="JS/controlador.js"type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+        </form>
+      </div>
+    </div>
     
+  </nav>
+
+<!--========================================================== -->
+                    <!-- SLIDER DE IMAGENES-->
+<!--========================================================== -->
+
+<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="JS/images/bg.jpg" class="d-block w-100" alt="">
+      </div>
+      
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="JS/images/bg3.jpg" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="JS/images/bg4.jpg" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+   
+ 
+<!--========================================================== -->
+                    <!-- INTRODUCCION DE SERVICIOS-->
+<!--========================================================== -->
+
+
+<section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3"class="text-light">Disfruta tu musica favorita utilizando nuestra app<span class="text-primary">Demospoty</span></h1>
+    <img src="JS/images/playing.gif" alt="50">
+    </section>
+      
+
+<!--========================================================== -->
+                    <!--FOOTER-->
+<!--========================================================== -->
+
+
+<footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+<img src="JS/images/FOTO.jpeg" alt="40" width="44">
+<p class="fs-5 px-3  pt-3">AdnyLu. &copy; Todos Los Derechos Reservados 2022</p>
+<p class="fs-5 px-3  pt-3"> &copy; Medellin-Colombia</p>
+<div id="iconos" >
+  <a href="#"><i class="bi bi-facebook"></i></a>
+  <a href="#"><i class="bi bi-twitter"></i></a>
+  <a href="#"><i class="bi bi-instagram"></i></a>  
+</div>
+   
+</footer>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
+<script src="JS/controlador.js" type="module"></script>
+
+
+
 </body>
-</html> 
+</html>
